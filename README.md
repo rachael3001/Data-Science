@@ -14,11 +14,11 @@ Detailed below are explanations of trends and insights I discovered.
 
 Comparision between 2019 and 2020 insights:
 
-    Percent of total flights delayed
+Percent of total flights delayed
 
-    There is a clear difference between percent flights delay with 2019's average being 21% compared to 2020s 15% (a 6% increase) (shown in graph A)
+There is a clear difference between percent flights delay with 2019's average being 21% compared to 2020s 15% (a 6% increase) (shown in graph A)
 
-    Total Flights
+Total Flights
     
-    I was curious how total flights changed between the two years and there was a 40.6% reduction (shown in graph B). This could be due to the pandemic as many flights were cancelled
+I was curious how total flights changed between the two years and there was a 40.6% reduction (shown in graph B). This could be due to the pandemic as many flights were cancelled
 
