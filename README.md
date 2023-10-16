@@ -2,7 +2,7 @@
  
  Introduction:
 
-This is a walkthrough of how I am exploring the dataset of flight delays, utalising my growing data science skills. I will be showcasing python coding engaging with libraies such as pandas, matplotlib and seaborn. I will manipulate data to draw out trends producing graphs to better showcase these.
+This is a walkthrough of how I am exploring the dataset of flight delays, utalising my growing data science skills. I will be showcasing python coding engaging with libries such as pandas, matplotlib and seaborn. I will manipulate data to draw out trends producing graphs to better showcase these.
 
  Dataset:
 
