@@ -17,7 +17,7 @@ df["flightdelays_arrivals"] = x/y
 plot = sns.histplot(data=df, x="flightdelays_arrivals", hue="year", kde=True, palette="muted")
 plt.ylabel("Frequency")
 plt.xlabel("Percent of flights delayed at an airport")
-plt.title("Distribution of percentage of flights delayed out of total Flights arriving")
+plt.title("Percent of total flights delayed: 2019 and 2020")
 
 #Converting x-axis to percents for readability
 
