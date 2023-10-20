@@ -8,7 +8,6 @@ sns.set_style("darkgrid")
 
 y = df["arr_flights"]
 x = df["arr_del15"]
-delays  = ["nas_ct","security_ct","late_aircraft_ct", "weather_ct","carrier_ct"]
 #fig, ax= plt.subplots(nrows=1, ncols=2, figsize=(10,4))
 
 #Graph on comparison between 2019 and 2020 delays
@@ -48,11 +47,22 @@ print(columns[2:])
 #Works out mean performance of each type of delau, reset_index to negate issues with multiindexes and issues with merging
 carrier_performance = performance_df.groupby(['carrier', 'carrier_name']).mean()
 #plot graph by carrier name 
-#carrier_performance.plot(x='carrier_name', kind='bar', stacked=True)
 carrier_performance.plot(kind='bar', stacked=True)
 plt.xlabel('Carrier')
 sns.set_palette("magma")
 plt.ylabel('Number of Delays')
 plt.title('Carrier Delay Analysis')
-plt.legend(loc='upper right')
+
+plt.tight_layout()
+
 plt.show()
+
+#Proportion of flights
+proportional_df = df["carrier", "carrier_name", "carrier_ct", "weather_ct", "nas_ct", "security_ct", "late_aircraft_ct"]
+delays = ["carrier_ct", "weather_ct", "nas_ct", "security_ct", "late_aircraft_ct"]
+print(delays)
+print(proportional_df[delays])
+proportional_df[delays].divide(df["arr_flights"],axis="rows").multiply(100)
+print(proportional_df)
+
+proportionalPerformance = proportional_df.groupby(['carrier', 'carrier_name']).mean()
