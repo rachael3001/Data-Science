@@ -39,3 +39,20 @@ plt.xlabel("Year")
 plt.ylabel("Total flights")
 plt.title("Total Flights per year")
 plt.show()
+
+#Looking at individual carrier performance
+columns = ["carrier", "carrier_name", "arr_del15", "carrier_delay", "weather_delay","nas_delay", "security_delay", "late_aircraft_delay"]
+performance_df = df[columns]
+print(columns[2:])
+
+#Works out mean performance of each type of delau, reset_index to negate issues with multiindexes and issues with merging
+carrier_performance = performance_df.groupby(['carrier', 'carrier_name']).mean()
+#plot graph by carrier name 
+#carrier_performance.plot(x='carrier_name', kind='bar', stacked=True)
+carrier_performance.plot(kind='bar', stacked=True)
+plt.xlabel('Carrier')
+sns.set_palette("magma")
+plt.ylabel('Number of Delays')
+plt.title('Carrier Delay Analysis')
+plt.legend(loc='upper right')
+plt.show()
