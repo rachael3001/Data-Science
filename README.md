@@ -8,7 +8,7 @@ This is a walkthrough of how I am exploring the dataset of flight delays, utalis
 
  The dataset is about airline delay, with columns showcasing
 
- Insights:
+Insights:
 
 Detailed below are explanations of trends and insights I discovered. 
 
